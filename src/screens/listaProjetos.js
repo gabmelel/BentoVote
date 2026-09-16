@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, View, Text, Image, StyleSheet } from "react-native";
 import CardProjeto from "../components/cardProjeto";
 
-export default function BoasVindas({ navigation }){
+export default function listaProjetos({ navigation }){
     return (
         <View style={styles.container}>
             <CardProjeto></CardProjeto>
@@ -14,7 +14,7 @@ export default function BoasVindas({ navigation }){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff1f1',
+    backgroundColor: '#f2ffef',
     alignItems: 'center',
     justifyContent: 'center',
   },

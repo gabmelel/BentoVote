@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
     card: {
         margin: 5,
         borderWidth: 1,
-        borderColor: '#e9d4d4',
+        borderColor: '#e4e0de',
         borderRadius: 7,
         width: 350,
-        height: 120,
+        height: 100,
         overflow: 'hidden',
     },
     conteudo: {
@@ -47,10 +47,11 @@ conteudoTexto: {
         color: '#666',
     },
     icon: {
-        borderRadius: 30,
-        width: 100,
-        height: 100,
+        borderRadius: 15,
+        width: 75,
+        height: 75,
         margin: 10,
+        marginBottom: 25
     }
 
 })
