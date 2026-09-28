@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FlatList, View, Text, Image, StyleSheet, Dimensions, TouchableOpacity, SafeAreaView } from "react-native";
-import Button from "../components/Button";
+import ButtonDestaque from "../components/ButtonDestaque";
 
 
 const { width } = Dimensions.get('window');
@@ -52,7 +52,7 @@ function avancar() {
     return (
       <SafeAreaView style={styles.container}>
             <TouchableOpacity style={styles.Pular}> 
-              <Text style={{fontSize: 16, color: "#252525"}}>Pular</Text>
+              <Text style={{fontSize: 16, color: "#252525", textDecorationLine: 'underline'}}>Pular</Text>
           </TouchableOpacity>
           <FlatList
           style={{ flex: 1 }}
@@ -79,7 +79,7 @@ function avancar() {
     />
   ))}
 </View>
-          <Button
+          <ButtonDestaque
   texto={"Continuar"}
   onPress={avancar}
 />
@@ -98,8 +98,8 @@ container: {
 },
   Pular: {
     position: "absolute",
-    top: 40,
-    right: 40
+    top: 50,
+    right: 40,
   },
   Texto: {
     marginTop: 10,
